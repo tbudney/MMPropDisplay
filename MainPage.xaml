@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="MMPropDisplay.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MMPropDisplay"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid HorizontalAlignment="Center" Width="1920" Height="1080" Background="Black" BorderBrush="Red" BorderThickness="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        
+        <Image Width="200"  Source="/Assets/shenanigans.jpg"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Center"  Grid.Row="2" Text="Hello" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="White" FontSize="100"/>
+        <Button x:Name="TheButton" Content="DB PULL"  Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" Background="Green" Click="TheButton_Click"/>
+
+    </Grid>
+</Page>
